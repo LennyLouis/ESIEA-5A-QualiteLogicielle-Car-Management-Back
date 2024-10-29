@@ -1,4 +1,4 @@
-create database stockcar;
+﻿create database stockcar;
 use stockcar
 drop table voiture;
 create table voiture (

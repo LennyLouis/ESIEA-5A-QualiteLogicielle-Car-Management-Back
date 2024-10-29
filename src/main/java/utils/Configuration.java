@@ -54,7 +54,7 @@ public class Configuration {
 		if (ret == null) {
 			logger.error("La clé '" + key + "' n'existe pas dans le fichier " + REP_CONF+fichierConf);
 		}
-		logger.debug("Lecture de la cl� " + key + " dans la config : " + ret);
+		logger.debug("Lecture de la clé " + key + " dans la config : " + ret);
 		return ret;
     }
 }

@@ -31,11 +31,11 @@ public class VoitureDAO {
 			}
 		} catch (SQLException sql) {
 			sql.printStackTrace(); 
-			logger.debug("Impossible de se connecter � la base !" + sql);} 
+			logger.debug("Impossible de se connecter à la base !" + sql);} 
 		catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		logger.debug("Connexion � la base OK !" + connection);
+		logger.debug("Connexion à la base OK !" + connection);
 		return connection;
 	}
 	
@@ -120,7 +120,7 @@ public class VoitureDAO {
 					requete += colonne + " = ?,";
 					requeteComptage += colonne + " = ?,";
 				}
-				//retrait de la dernière virgule
+				//retrait de la derniÃ¨re virgule
 				requete = requete.substring(0, requete.length()-1);
 				requeteComptage = requeteComptage.substring(0, requeteComptage.length()-1);
 			}

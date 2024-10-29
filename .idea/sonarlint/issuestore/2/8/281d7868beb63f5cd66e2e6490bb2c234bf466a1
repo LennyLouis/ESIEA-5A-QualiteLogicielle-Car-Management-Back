@@ -1,0 +1,20 @@
+
+{
+java:S2293^"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œµ¸éùÿÿÿÿ8ä†ùÂ­2
+‡
+java:S1319g"eThe type of "criteres" should be an interface such as "Map" rather than the implementation "HashMap".(ˆƒ›–úÿÿÿÿ8å†ùÂ­2
+>
+java:S1643x"Use a StringBuilder instead.(äŒ¸Óÿÿÿÿÿ8æ†ùÂ­2
+8
+java:S1643y"Use a StringBuilder instead.(ªµ©/8æ†ùÂ­2
+–
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿ©þB
+X	java:S125T"<This block of commented-out lines of code should be removed.(²ÊÈø8†‡ùÂ­2
+O
+java:S1659j"-Declare "requeteComptage" on a separate line.(ææÿèüÿÿÿÿ8‡ùÂ­2
+n
+java:S3776•"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Å±©÷ýÿÿÿÿ
+N
+java:S1854²"7Remove this useless assignment to local variable "cpt".(áÑœ©
+K
+java:S2864š"4Iterate over the "entrySet" instead of the "keySet".(Áˆ±ö
