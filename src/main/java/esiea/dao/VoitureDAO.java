@@ -15,23 +15,22 @@ import utils.Configuration;
 import utils.StringUtils;
 
 public class VoitureDAO {
-	
+
 	private Connection connection;
 	protected static final Logger logger = Logger.getLogger(VoitureDAO.class);
-	
+
 	public VoitureDAO() {
-		
 	}
-	
-	private Connection getConnexion() {
+
+	protected Connection getConnexion() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			if (connection == null) {
 				connection = DriverManager.getConnection(getUrlBase(), Configuration.getConfig("bdd.utilisateur"), Configuration.getConfig("bdd.mdp"));
 			}
 		} catch (SQLException sql) {
-			sql.printStackTrace(); 
-			logger.debug("Impossible de se connecter à la base !" + sql);} 
+			sql.printStackTrace();
+			logger.debug("Impossible de se connecter à la base !" + sql);}
 		catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}

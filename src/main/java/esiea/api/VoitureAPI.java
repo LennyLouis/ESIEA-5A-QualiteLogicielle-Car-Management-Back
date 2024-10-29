@@ -21,9 +21,17 @@ import utils.StringUtils;
 
 @Path("/voiture")
 public class VoitureAPI {
-	
-	private VoitureDAO vDao = new VoitureDAO();
-	
+
+	private VoitureDAO vDao;
+
+	public VoitureAPI() {
+		this.vDao = getVoitureDAO();
+	}
+
+	protected VoitureDAO getVoitureDAO() {
+		return new VoitureDAO();
+	}
+
 	@Path("get/{param}")
 	@GET
 	@Produces("application/json")
