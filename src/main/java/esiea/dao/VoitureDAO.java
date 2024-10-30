@@ -53,7 +53,7 @@ public class VoitureDAO {
 	}
 	
 	public void ajouterVoiture(Voiture voiture) throws SQLException {
-		String requete = "INSERT INTO Voiture (marque, modele, finition, carburant, km, annee, prix) VALUES  "
+		String requete = "INSERT INTO voiture (marque, modele, finition, carburant, km, annee, prix) VALUES  "
 				+ "(?,?,?,?,?,?,?)";
 		PreparedStatement stmt = getConnexion().prepareStatement(requete);
 		stmt.setString(1, voiture.getMarque());
@@ -68,7 +68,7 @@ public class VoitureDAO {
 	}
 	
 	public void modifierVoiture(int id, Voiture nouvelle) throws SQLException {
-		String requete = "UPDATE Voiture SET marque = ?, "
+		String requete = "UPDATE voiture SET marque = ?, "
 				+ "modele = ?, "
 				+ "finition = ?, "
 				+ "carburant = ?, "
@@ -101,8 +101,8 @@ public class VoitureDAO {
 	
 	public ReponseVoiture getVoitures(HashMap<String, String> criteres, int mini, int nbVoitures) throws SQLException {
 		String requete = "SELECT id, marque, modele, finition, carburant, km, annee, prix "
-				+ "FROM Voiture ",
-				requeteComptage = "SELECT COUNT(*) FROM Voiture ";
+				+ "FROM voiture ",
+				requeteComptage = "SELECT COUNT(*) FROM voiture ";
 		String masque = null;
 		ReponseVoiture ret = new ReponseVoiture();
 		int nbCol = 0;
@@ -211,7 +211,7 @@ public class VoitureDAO {
 	}
 	
 	public void supprimerVoiture(String id) throws SQLException {
-		String requete = "DELETE FROM Voiture WHERE id = ?";
+		String requete = "DELETE FROM voiture WHERE id = ?";
 		PreparedStatement stmt = getConnexion().prepareStatement(requete);
 		stmt.setString(1, id);
 		stmt.executeUpdate();
