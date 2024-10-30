@@ -1,0 +1,22 @@
+meta {
+  name: Add Invalid Voiture
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/voiture/add
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "marque": "",
+    "modele": "Test",
+    "carburant": "X",
+    "km": -1,
+    "annee": 2025,
+    "prix": -1000
+  }
+}

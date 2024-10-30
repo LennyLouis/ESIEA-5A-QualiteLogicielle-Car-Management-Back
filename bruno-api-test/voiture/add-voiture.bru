@@ -1,0 +1,23 @@
+meta {
+  name: Add Valid Voiture
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/voiture/add
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "marque": "Renault",
+    "modele": "Clio",
+    "finition": "Business",
+    "carburant": "D",
+    "km": 50000,
+    "annee": 2020,
+    "prix": 15000
+  }
+}
