@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'ESIEA-5A-QualiteLogicielle-Car-Management-Back/**'
+      - '**'
 
 env:
   AWS_REGION: eu-west-3
