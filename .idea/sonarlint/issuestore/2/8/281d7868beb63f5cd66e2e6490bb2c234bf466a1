@@ -1,20 +1,30 @@
 
 {
-java:S2293^"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œµ¸éùÿÿÿÿ8ä†ùÂ­2
+java:S2293]"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œµ¸éùÿÿÿÿ8ä†ùÂ­2
 ‡
-java:S1319g"eThe type of "criteres" should be an interface such as "Map" rather than the implementation "HashMap".(ˆƒ›–úÿÿÿÿ8å†ùÂ­2
+java:S1319f"eThe type of "criteres" should be an interface such as "Map" rather than the implementation "HashMap".(ˆƒ›–úÿÿÿÿ8å†ùÂ­2
 >
-java:S1643x"Use a StringBuilder instead.(äŒ¸Óÿÿÿÿÿ8æ†ùÂ­2
+java:S1643w"Use a StringBuilder instead.(äŒ¸Óÿÿÿÿÿ8åŒ¼æ­2
 8
-java:S1643y"Use a StringBuilder instead.(ªµ©/8æ†ùÂ­2
-–
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿ©þB
-X	java:S125T"<This block of commented-out lines of code should be removed.(²ÊÈø8†‡ùÂ­2
+java:S1643x"Use a StringBuilder instead.(ªµ©/8æŒ¼æ­2
+m
+java:S2095×"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(·«Ô8Ç¶½Ã­2
+l
+java:S2095O"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(·«Ô8Ä¶½Ã­2
+l
+java:S2095:"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(·«Ô8Ç¶½Ã­2
+r
+java:S2095•"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(´ùŸØúÿÿÿÿ8ëŽ¼æ­2
+Z
+java:S2589¢"7Remove this expression which always evaluates to "true"(«¹Ø‚ýÿÿÿÿ8ëŽ¼æ­2
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿ©þB8þ’¾Ã­2
+X	java:S125S"<This block of commented-out lines of code should be removed.(²ÊÈø8†‡ùÂ­2
 O
-java:S1659j"-Declare "requeteComptage" on a separate line.(ææÿèüÿÿÿÿ8‡ùÂ­2
-n
-java:S3776•"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Å±©÷ýÿÿÿÿ
-N
-java:S1854²"7Remove this useless assignment to local variable "cpt".(áÑœ©
-K
-java:S2864š"4Iterate over the "entrySet" instead of the "keySet".(Áˆ±ö
+java:S1659i"-Declare "requeteComptage" on a separate line.(¼¾°¿ùÿÿÿÿ8ûŽ¼æ­2
+u
+java:S3776”"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Å±©÷ýÿÿÿÿ8ÿŽ¼æ­2
+U
+java:S1854±"7Remove this useless assignment to local variable "cpt".(áÑœ©8ÿŽ¼æ­2
+R
+java:S2864™"4Iterate over the "entrySet" instead of the "keySet".(Áˆ±ö8€¼æ­2
