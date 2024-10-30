@@ -30,6 +30,7 @@ jobs:
       - name: Run tests with Maven
         run: mvn test
   build:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
