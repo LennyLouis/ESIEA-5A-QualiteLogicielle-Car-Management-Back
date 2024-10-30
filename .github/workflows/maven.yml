@@ -3,8 +3,6 @@ name: Deploy Backend to Amazon ECS
 on:
   push:
     branches: [ "main" ]
-    paths:
-      - '**'
 
 env:
   AWS_REGION: eu-west-3
@@ -31,14 +29,13 @@ jobs:
           cache: maven
           
       - name: Build with Maven
-        working-directory: ./ESIEA-5A-QualiteLogicielle-Car-Management-Back
         run: mvn -B package --file pom.xml
 
       - name: Upload WAR file
         uses: actions/upload-artifact@v4
         with:
           name: backend-war
-          path: ./ESIEA-5A-QualiteLogicielle-Car-Management-Back/target/*.war
+          path: target/*.war
 
   deploy:
     needs: build
@@ -54,7 +51,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: backend-war
-        path: ./ESIEA-5A-QualiteLogicielle-Car-Management-Back/target/
+        path: target/
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
@@ -73,7 +70,6 @@ jobs:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         IMAGE_TAG: ${{ github.sha }}
       run: |
-        cd ESIEA-5A-QualiteLogicielle-Car-Management-Back
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:latest
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
