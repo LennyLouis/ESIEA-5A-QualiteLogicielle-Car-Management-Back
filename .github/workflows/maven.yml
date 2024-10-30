@@ -52,7 +52,7 @@ jobs:
 
   deploy:
     needs: build
-    name: Deploy
+    name: deploy
     runs-on: ubuntu-latest
     environment: production
 
