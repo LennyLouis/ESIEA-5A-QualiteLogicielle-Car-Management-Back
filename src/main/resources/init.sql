@@ -5,7 +5,7 @@ CREATE DATABASE IF NOT EXISTS stockcar;
 USE stockcar;
 
 -- Suppression de la table si elle existe
-DROP TABLE IF EXISTS voiture;
+DROP TABLE IF EXISTS Voiture;
 
 -- Création de la table
 CREATE TABLE voiture (
